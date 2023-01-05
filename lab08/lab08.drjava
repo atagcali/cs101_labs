@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20190813-220051">
+  <project autorefresh="false" build="classes/" main="LibraryTest" root="src/" work="src/">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="LibraryTest.java" package="" timestamp="05-Dec-2019 16:27:55">
+        <select from="2638" to="2638"/>
+        <scroll column="839" row="0"/>
+      </file>
+      <file name="lab08/Librarybook.java" package="lab08" timestamp="05-Dec-2019 16:22:21">
+        <select from="2638" to="2638"/>
+        <scroll column="839" row="0"/>
+      </file>
+      <file name="lab08/Library.java" package="lab08" timestamp="05-Dec-2019 16:22:21">
+        <select from="2638" to="2638"/>
+        <scroll column="839" row="0"/>
+      </file>
+      <file name="LibrarybookTest.java" package="" timestamp="05-Dec-2019 16:22:20">
+        <select from="2638" to="2638"/>
+        <scroll column="839" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

@@ -1,0 +1,52 @@
+/**
+ * Dice Methods
+ */
+public class Dice 
+{
+   // properties
+   Die die1;
+   Die die2;
+   int die1FaceValue;
+   int die2FaceValue;
+
+   // constructors
+   
+   public Dice( Die die1, Die die2)
+   {
+     this.die1 = die1;
+     this.die2 = die2;
+   }
+   
+   // methods
+  
+  public int rollBoth()
+  {
+    die1 = new Die();
+    die2 = new Die();
+    
+    die1FaceValue = die1.getFaceValue();
+    die2FaceValue = die2.getFaceValue();
+    
+    return die1.getFaceValue() + die2.getFaceValue();
+  }
+  
+  public int getDie1FaceValue()
+  {
+    return die1FaceValue;
+  }
+  
+  public int getDie2FaceValue()
+  {
+    return die2FaceValue;
+  }
+  
+  public int getDiceTotal()
+  {
+    return die1FaceValue + die2FaceValue;
+  }
+  
+  public String toString()
+  {
+    return die1FaceValue + " - " + die2FaceValue;
+  }
+}

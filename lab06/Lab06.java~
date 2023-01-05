@@ -1,0 +1,176 @@
+import java.util.Scanner;
+
+
+public class Lab06{
+   /**
+ * This is a brief description of the method.
+ * @param x is integer
+ * @param y is integer 
+ * @return is x to the power y
+ */
+   public static double power( double x, int y)
+   {  
+      int i;
+      double z;
+      z = 1;
+      for ( i = 0 ; i <y ; i++){
+         z = z * x;
+      }
+      {
+      return z;  
+      }
+    }
+   /*this is a brief description of the method.
+    * @param n is integer
+    * @return is n factorial
+   */
+   public static int factorial ( int n ) {
+      int a;
+      int b;
+      int c;
+      b = 1;
+      c = n;
+      for ( a = 0 ; a < n ; a++){
+         
+         b = b * c;
+         c--;
+         
+      }
+      {
+         return b;
+      }      
+   }
+   /*this is a brief description of method
+    * @ param s is string
+    * @ return is reverse of s
+   */
+   public static String reverse( String s){
+      int a;
+      int b;
+      char c;
+      int d;
+      String e;
+      e = "";
+      d = s.length() - 1;
+      for ( a = 0 ; a < s.length() ; a++){
+         c = s.charAt(d);
+         e = e + String.valueOf(c);         
+         d--;
+      }
+      {
+      return e;
+      }
+   } 
+   /*this is a brief description of method
+    * @param base2 is string 
+    * @return is parameter's decimal base10 equivalent
+    */
+   public static int toDecimal( String base2){
+     int a;
+     int b;
+     char c;
+     int d;
+     d = 0;
+     int power;
+     a  = base2.length() - 1;
+     for ( b = 0 ; b < base2.length() ; b++ ){
+        c = base2.charAt(a);
+        power = 1;
+        int x;
+        for ( x = 0 ; x < b ; x++){
+           power = power *2; 
+        }      
+        
+        d = d + ((Character.getNumericValue(c)) * power);
+        a--;
+    }
+    {
+        return d;
+     }
+  }
+   /*this is a brief description of method
+    * 
+   */
+   
+  public static void main(String[] args) {
+     Scanner scan = new Scanner( System.in);
+
+     int n;
+     String a;
+     String b;
+     String c;
+     String d;
+     int e;
+     String f;
+     String g;
+     String h;
+     String i;
+     int j;
+     int k;
+     String l;
+     int m;
+     String o;
+   //task1
+     for ( n = -1 ; n <= 10 ; n++){
+        
+        
+        a = Double.toString(power(n,1));  
+        while ( a.length() < 8 ) {
+          a = a + " ";
+        }  
+          System.out.print(a);
+        
+        b = Double.toString(power(n,2));  
+        while ( b.length() < 8 ) {
+          b = b + " ";
+        } 
+           System.out.print(b);
+       
+        c = Double.toString(power(n,3));  
+        while ( c.length() < 8 ) {
+          c = c + " ";
+        }  
+           System.out.print(c);
+        
+        d = Double.toString(power(n,4));
+        while ( d.length() < 8 ) {
+           d = d + " ";
+        }  
+         System.out.print(d);
+        System.out.println();
+        System.out.println();
+        
+        
+     }
+   // task 2
+       for ( e = 1 ; e < 15 ; e++){
+        System.out.println(factorial(e));
+     }
+   // task 3
+       f = scan.next();
+       g = scan.next();
+       System.out.println(toDecimal(f) + toDecimal(g));
+       System.out.println();
+       
+   // task 4
+       System.out.println("please enter a sentence");
+       scan.nextLine();
+       i = scan.nextLine(); 
+       k = i.indexOf(" ");
+       l = i.substring(0,k);
+       System.out.println(reverse(l));
+       m = i.indexOf(" ",k);
+       o = i.substring(k,m);
+        System.out.println(reverse(o));
+        
+       
+       
+       
+         
+       
+   }  
+    /*public static void main(String[] args) {
+    System.out.println(reverse("abcd"));
+  }*/
+}   
+  

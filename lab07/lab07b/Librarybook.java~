@@ -1,0 +1,54 @@
+
+public class Librarybook
+{
+    // properties
+  String title;
+  String author;
+  String dueDate;
+  int timesLoaned;
+  int result;
+
+    // constructors
+  public Librarybook ( String title1, String author1, String dueDate1, int timesLoaned1 ){
+     title = title1;
+     author = author1;
+     dueDate = dueDate1;
+     timesLoaned = timesLoaned1;
+  }
+
+    // methods
+  public String toString(){
+     return "Book Title: " + title + ", Author: " + author + ", due date: " + dueDate + ", times loaned: " + timesLoaned;
+  }
+  
+  public void loan(String newDueDate){
+    if (dueDate == "" ){
+       dueDate = newDueDate;
+    timesLoaned = timesLoaned + 1;
+    }
+    else {
+      System.out.println("this book is already loaned");
+    }
+  }
+  
+  public void returnBook(){
+    dueDate = "";
+  
+  }
+  
+  public boolean onLoan (){
+    if( dueDate == "" ){
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
+  
+  public int getTimesLoaned(){
+     return timesLoaned;
+  }
+  
+  
+  
+}

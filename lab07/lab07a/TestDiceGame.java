@@ -1,0 +1,20 @@
+
+public class TestDiceGame
+{
+   public static void main( String[] args)
+   {
+      // constants
+
+      // variables
+      Die die1;
+      Die die2;
+      DiceGame myDice;
+
+      // program code
+      die1 = new Die();
+      die2 = new Die();
+      myDice = new DiceGame();
+      
+      System.out.println( "The number of tries to get two 6s is " + myDice.play());
+   }
+}

@@ -1,0 +1,115 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+/**
+ * lab09b 
+ * @author Esra Genç
+ * @version 11.12.2019
+ */ 
+public class lab09b
+{
+   //method for rolling 1000 dies and returning the values 
+   public static ArrayList<Integer> frequency()
+   {
+      //variables
+      Die die1;
+      Die die2;
+      Dice dice;
+      ArrayList<Integer> frequencies;
+      int data;
+      int i;
+      
+      //give values to tariables
+      frequencies = new ArrayList<Integer>();
+      die1 = new Die();
+      die2 = new Die();
+      dice = new Dice( die1, die2);
+      
+      // create an array list for 11 possible values 
+      for( i = 0; i < 11; i++)
+      {
+         frequencies.add( 0);
+      }
+      
+      //roll 1000 dies
+      for( i = 0; i < 1000; i++)
+      {
+         int sum;
+         int count;
+        
+         sum = dice.rollBoth();
+         for( count = 2; count <= 12; count++)
+         {
+            if( sum == count)
+            {
+               frequencies.set( count - 2, frequencies.get( count - 2) + 1);
+            }
+         }
+      }
+      return frequencies;
+   }
+   
+   //method for histogram
+   public static void histogram( ArrayList<Integer> frequencies)
+   {
+      //variables
+      int max;
+      int i;
+      int star;
+      int l;
+      String result;
+      
+      max = 0;
+      result = "";
+      
+      //get max frequency
+      for( i = 0; i < frequencies.size(); i++)
+      {
+         if( frequencies.get( i) > max)
+         {
+            max = frequencies.get( i);
+         }
+      }
+      
+      star = max / 10 + 1;
+      
+      //histogram
+      for( l = 10; l > 0; l--)
+      {
+         for( i = 0; i < 11; i++)
+         {
+            if( frequencies.get( i) / star >= l)
+            {
+               result = result + "* ";
+            }
+            else 
+            {
+               result = result + "  ";
+            }
+         }
+         result = result + "\n";
+      }
+      
+      //print histogram
+      System.out.println( frequencies);
+      System.out.println();
+      System.out.println( "Frequency Distribution");
+      System.out.println( "for 1000 Dice rolls");
+      System.out.println( "( max frequency is " + max + ")");
+      System.out.println();
+      System.out.println( result);
+   }
+
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+
+      // program code
+      histogram( frequency());
+   }
+
+}

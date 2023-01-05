@@ -1,0 +1,24 @@
+/*author: Alp Tuðrul Aðçalý
+ * section:02
+ */
+import lab08.*;
+import java.util.Scanner;
+public class LibraryTest {
+  public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+      int choice;
+      int selection;
+      Librarybook b1;
+      String title;
+      String author;
+      Library library; 
+      //program code
+                 
+  
+}
+}

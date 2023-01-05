@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20190813-220051">
+  <project autorefresh="false" build="" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="Die.java" package="" timestamp="28-Nov-2019 02:34:49">
+        <select from="75" to="75"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="TestDie.java" package="" timestamp="28-Nov-2019 02:34:06">
+        <select from="75" to="75"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="TestDiceGame.java" package="" timestamp="28-Nov-2019 02:34:09">
+        <select from="75" to="75"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="TestDice.java" package="" timestamp="28-Nov-2019 02:34:10">
+        <select from="75" to="75"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="lab07a.java" package="" timestamp="28-Nov-2019 02:34:11">
+        <select from="75" to="75"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Dice.java" package="" timestamp="28-Nov-2019 02:34:38">
+        <select from="75" to="75"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="DiceGame.java" package="" timestamp="28-Nov-2019 02:34:40">
+        <select from="75" to="75"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

@@ -1,0 +1,28 @@
+import java.util.Scanner
+   
+  
+public class Lab04a{
+    public static void main(string[]args){
+       int n;
+       System.out.println("please enter a positive number");
+       Scanner scan = n( System.in);
+       if (n < 0){
+          System.out.println("the number is unvalid");
+          while ( n < 0 ){
+             System.out.println(" n = " + n);
+          }  
+       }
+       
+       
+       
+       
+    
+  
+
+    
+    
+    
+    
+    
+  }
+}

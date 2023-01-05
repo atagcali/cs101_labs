@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+/**
+ * Alp Tuðrrul Aðçalý
+ * Section 02s
+ */ 
+public class lab10a
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+      BigNum b1;
+      BigNum b2;
+      BigNum b3;
+
+      // program code
+      b1 = new BigNum();
+      b2 = new BigNum( "110");
+      b3 = new BigNum( b2);
+      
+   }
+}

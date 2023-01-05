@@ -1,0 +1,39 @@
+
+public class DiceGame 
+{
+   // properties
+   Dice myDice;
+
+   // constructors
+   public DiceGame()
+   {
+     Die die1;
+     Die die2;
+     die1 = new Die();
+     die2 = new Die();
+     myDice = new Dice( die1, die2);
+   }
+   
+   // methods
+   public int play()
+   {
+     Die die1;
+     Die die2;
+     int rolls;
+     
+     rolls = 1;
+     die1 = new Die();
+     die2 = new Die();
+     
+     myDice = new Dice( die1, die2);
+    
+     while( myDice.getDie1FaceValue() != 6 && myDice.getDie2FaceValue() != 6)
+     {
+        myDice.rollBoth();
+        rolls++;
+     }
+     
+     return rolls;
+   }
+
+}

@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+
+public class lab05a
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+      
+      // variables
+      int width;
+      int height;
+      int thickness;  
+      int a;
+      int b;
+      int c;
+      String output;
+      String hole;
+      output = "*";
+      hole= " ";
+     
+      
+
+      // program code
+      System.out.println("enter widht");
+      width = scan.nextInt();
+      System.out.println("enter height");
+      height = scan.nextInt();
+      System.out.println("enter thickness");
+      thickness = scan.nextInt();
+      if ( width <= 0 || height <= 0 || thickness <= 0){
+         System.out.println("please enter positive numbers");
+      }
+      
+      for ( b = 0 ; b < thickness ; b++ ){
+       
+              
+         for ( a = 0 ; a < width ; a++  ) {
+           System.out.print(output);
+            
+         }
+         System.out.println();
+         }
+      
+      for ( b = 0 ; b < height - 2 * thickness ; b++){
+         for ( c = 0 ; c < thickness ; c++){
+            System.out.print(output);
+         }
+         for ( c = 0 ; c < width - 2*thickness ; c++){
+            System.out.print(hole);
+         }
+         
+         for ( c = 0 ; c < thickness ; c++){
+            System.out.print(output);
+         }      
+         
+         System.out.println();
+      }
+       for ( b = 0 ; b < thickness ; b++ ){
+          
+       
+       
+         for ( a = 0 ; a < width ; a++  ) {
+           System.out.print(output);
+            
+         }
+         System.out.println();
+       
+      }
+       if ( width - 2*thickness <= 0 || height - 2*thickness <= 0 ){
+           System.out.println("oops... no hole!");
+         }
+      
+      
+                 
+         
+         
+       
+      
+      
+      
+   
+   }  
+} // end class1
